@@ -1,5 +1,7 @@
 package juego.cartas.blackjack.cartas;
 
+import java.util.List;
+
 import juegos.cartas.cartas.cartas.modelos.ICartaNumeroPaloFrancesa;
 
 /**
@@ -45,7 +47,7 @@ implements ValoradorCartas<C>
 		return false;
 	}
 	@Override
-	public boolean contieneAs(C carta) {
+	public boolean contieneAs(List<C> carta) {
 		// TODO Auto-generated method stub
 		return false;
 	}

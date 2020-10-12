@@ -17,6 +17,7 @@ extends RealizadorTurno<C, AccionBlackJack, JuegoBlackJack<FaseBlackJack>, Jugad
 {
 
 	ValoradorMano<C> val;
+	ValoradorCartas<C> valCartas;
 	public Banca(JugadorBlackjack<C> jugador, JuegoBlackJack<FaseBlackJack> juegoCartas) {
 		super(jugador, juegoCartas);
 	}
@@ -30,8 +31,10 @@ extends RealizadorTurno<C, AccionBlackJack, JuegoBlackJack<FaseBlackJack>, Jugad
 		if(listPuntos.size()==1)
 		{
 			int puntos=listPuntos.get(0);
-			if(puntos==17 && )
-			
+			if(puntos==17 && valCartas.contieneAs(jugador.getCartas()))
+			{
+				System.out.println("es soft 17");
+			}
 			if(puntos < 16)
 				return AccionBlackJack.Hit;
 			else
@@ -41,9 +44,9 @@ extends RealizadorTurno<C, AccionBlackJack, JuegoBlackJack<FaseBlackJack>, Jugad
 		return AccionBlackJack.Stand;
 	}
 	
-	public void darSeguroAJugador()
+	public void darSeguroAJugador(JugadorBlackjack<C> j)
 	{
-		
+		j.setTieneSeguro(true);
 	}
 	
 	

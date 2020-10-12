@@ -13,11 +13,23 @@ public class JugadorBlackjack<C extends CartaFrancesa> extends Jugador<C>{
 	
 	List<List<C>> divisiones;
 	IgualdadNumeros<C> ig;
+
+	boolean tieneSeguro;
 	
 	public void dividir(int i)
 	{
 		BlackJackUtils.dividirMultiLista(divisiones, ig, i);
 	}
+
+	public boolean isTieneSeguro() {
+		return tieneSeguro;
+	}
+
+	public void setTieneSeguro(boolean tieneSeguro) {
+		this.tieneSeguro = tieneSeguro;
+	}
+	
+	
 	
 	
 }

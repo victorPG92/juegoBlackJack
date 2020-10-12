@@ -1,5 +1,7 @@
 package juego.cartas.blackjack.cartas;
 
+import java.util.List;
+
 import juegos.cartas.cartas.cartas.ICartaComparable;
 
 public interface ValoradorCartas<C extends ICartaComparable>
@@ -31,5 +33,5 @@ public interface ValoradorCartas<C extends ICartaComparable>
 	 * @param carta
 	 * @return
 	 */
-	public boolean contieneAs(C carta);
+	public boolean contieneAs(List<C> carta);
 }
