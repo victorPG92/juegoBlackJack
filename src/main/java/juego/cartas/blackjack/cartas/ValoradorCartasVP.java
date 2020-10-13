@@ -41,14 +41,16 @@ implements ValoradorCartas<C>
 			return 11;
 		else return null;
 	}
+	
 	@Override
 	public boolean esAs(C carta) {
-		// TODO Auto-generated method stub
-		return false;
+		return carta.getNumero()==1;
+		
 	}
 	@Override
-	public boolean contieneAs(List<C> carta) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean esFigura(C carta) {
+		return dameValor(carta)==10;
 	}
+	
+	
 }

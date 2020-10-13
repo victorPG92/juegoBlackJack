@@ -28,10 +28,13 @@ public interface ValoradorCartas<C extends ICartaComparable>
 	 */
 	public boolean esAs(C carta);
 	
+	
 	/**
-	 * Contiene un as
+	 * Es un as
 	 * @param carta
 	 * @return
 	 */
-	public boolean contieneAs(List<C> carta);
+	public boolean esFigura(C carta);
+	
+	
 }

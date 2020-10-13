@@ -5,6 +5,7 @@ import java.util.List;
 import juego.cartas.blackjack.cartas.JugadorBlackjack;
 import juego.cartas.blackjack.cartas.ValoradorCartas;
 import juego.cartas.blackjack.cartas.ValoradorMano;
+import juego.cartas.blackjack.cartas.ValoradorManoJugada;
 import juego.cartas.blackjack.juego.AccionBlackJack;
 import juego.cartas.blackjack.juego.FaseBlackJack;
 import juego.cartas.blackjack.juego.JuegoBlackJack;
@@ -17,6 +18,7 @@ extends RealizadorTurno<C, AccionBlackJack, JuegoBlackJack<FaseBlackJack>, Jugad
 {
 
 	ValoradorMano<C> val;
+	ValoradorManoJugada<C> valJug;
 	ValoradorCartas<C> valCartas;
 	public Banca(JugadorBlackjack<C> jugador, JuegoBlackJack<FaseBlackJack> juegoCartas) {
 		super(jugador, juegoCartas);
@@ -31,7 +33,7 @@ extends RealizadorTurno<C, AccionBlackJack, JuegoBlackJack<FaseBlackJack>, Jugad
 		if(listPuntos.size()==1)
 		{
 			int puntos=listPuntos.get(0);
-			if(puntos==17 && valCartas.contieneAs(jugador.getCartas()))
+			if(puntos==17 && valJug.contieneAs(jugador.getCartas()))
 			{
 				System.out.println("es soft 17");
 			}

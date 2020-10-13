@@ -6,7 +6,8 @@ import java.util.List;
 import juego.cartas.blackjack.utils.BlackJackUtils;
 import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
 
-public class ValoradorCartasImp<C extends CartaFrancesa> implements ValoradorMano<C>
+public class ValoradorManoImp<C extends CartaFrancesa> 
+implements ValoradorMano<C>,ValoradorManoJugada<C>
 {
 	
 	ValoradorCartas<C> val;
@@ -93,6 +94,28 @@ public class ValoradorCartasImp<C extends CartaFrancesa> implements ValoradorMan
 		}
 		
 		return posibilidades;
+	}
+	
+	
+	@Override
+	public boolean contieneAs(List<C> carta) {
+		for (C c : carta) {
+			if(val.esAs(c))
+				return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public boolean esBlackJack(List<C> cartas) 
+	{
+		if(!contieneAs(cartas) || cartas.size()>2)
+			return false;
+		
+		return val.esAs(cartas.get(0)) && val.esFigura(cartas.get(1))
+		|| val.esAs(cartas.get(1)) && val.esFigura(cartas.get(0));
+		
+		//return false;
 	}
 
 	
