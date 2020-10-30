@@ -1,7 +1,5 @@
 package juego.cartas.blackjack.cartas;
 
-import java.util.List;
-
 import juegos.cartas.cartas.cartas.ICartaComparable;
 
 public interface ValoradorCartas<C extends ICartaComparable>

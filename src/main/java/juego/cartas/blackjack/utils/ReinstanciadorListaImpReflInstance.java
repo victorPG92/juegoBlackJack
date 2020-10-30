@@ -1,6 +1,5 @@
 package juego.cartas.blackjack.utils;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReinstanciadorListaImpReflInstance<T> implements ReinstanciadorLista<T>

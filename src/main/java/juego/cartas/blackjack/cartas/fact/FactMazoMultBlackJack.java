@@ -1,9 +1,9 @@
 package juego.cartas.blackjack.cartas.fact;
 
-import juegos.cartas.cartas.cartas.modelos.ICartaNumeroPaloFrancesa;
+import juego.cartas.clasicos.mazos.fact.mult.FactMazoMultiple;
+import juego.cartas.clasicos.modelos.ICartaNumeroPaloFrancesa;
 import juegos.cartas.cartas.mazos.fact.TipoClasico;
 import juegos.cartas.cartas.mazos.fact.TipoParametrizacion;
-import juegos.cartas.cartas.mazos.fact.mult.FactMazoMultiple;
 import juegos.cartas.cartas.mazos.modelos.func.MazoMultiple;
 
 

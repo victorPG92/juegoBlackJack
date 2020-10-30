@@ -1,8 +1,7 @@
 package juego.cartas.blackjack.fact;
 
-import juegos.cartas.cartas.cartas.CartaNumeroPalo;
+import juego.cartas.clasicos.mazos.fact.FactMazoConcreto;
 import juegos.cartas.cartas.cartas.ICartaNumeroPalo;
-import juegos.cartas.cartas.mazos.fact.FactMazoConcreto;
 import juegos.cartas.cartas.mazos.impl.gen.MazoGen;
 
 /**

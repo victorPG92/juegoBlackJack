@@ -2,7 +2,7 @@ package juego.cartas.blackjack.cartas;
 
 import java.util.List;
 
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
 
 public interface ValoradorMano <C extends CartaFrancesa>
 {

@@ -5,8 +5,8 @@ import java.util.List;
 
 import juego.cartas.blackjack.cartas.ValoradorMano;
 import juego.cartas.blackjack.cartas.ValoradorManoJugada;
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
-import juegos.cartas.cartas.cartas.modelos.ICartaNumeroPaloFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
+
 
 public class ComparadorManosBlackJack<C extends CartaFrancesa> implements Comparator<List<C>>
 {

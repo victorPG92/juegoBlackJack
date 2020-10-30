@@ -3,7 +3,7 @@ package juego.cartas.blackjack.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
 
 public class BlackJackUtils
 {

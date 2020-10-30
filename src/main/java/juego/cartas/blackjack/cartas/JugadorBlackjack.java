@@ -4,7 +4,7 @@ import java.util.List;
 
 import juego.cartas.blackjack.utils.BlackJackUtils;
 import juego.cartas.blackjack.utils.IgualdadNumeros;
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
 import juegos.cartas.cartas.mesas.Jugador;
 
 public class JugadorBlackjack<C extends CartaFrancesa> extends Jugador<C>{

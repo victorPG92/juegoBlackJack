@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import juego.cartas.blackjack.utils.BlackJackUtils;
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
 
 public class ValoradorManoImp<C extends CartaFrancesa> 
 implements ValoradorMano<C>,ValoradorManoJugada<C>

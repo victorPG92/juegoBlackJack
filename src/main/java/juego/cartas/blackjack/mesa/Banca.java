@@ -9,8 +9,7 @@ import juego.cartas.blackjack.cartas.ValoradorManoJugada;
 import juego.cartas.blackjack.juego.AccionBlackJack;
 import juego.cartas.blackjack.juego.FaseBlackJack;
 import juego.cartas.blackjack.juego.JuegoBlackJack;
-import juego.cartas.blackjack.utils.BlackJackUtils;
-import juegos.cartas.cartas.cartas.modelos.CartaFrancesa;
+import juego.cartas.clasicos.modelos.CartaFrancesa;
 import juegos.cartas.cartas.juego.RealizadorTurno;
 
 public class Banca<C extends CartaFrancesa> 

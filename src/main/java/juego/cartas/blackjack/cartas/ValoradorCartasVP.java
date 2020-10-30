@@ -1,8 +1,6 @@
 package juego.cartas.blackjack.cartas;
 
-import java.util.List;
-
-import juegos.cartas.cartas.cartas.modelos.ICartaNumeroPaloFrancesa;
+import juego.cartas.clasicos.modelos.ICartaNumeroPaloFrancesa;
 
 /**
  * Valora una carta francesa con numeros de Integer
